@@ -6,7 +6,31 @@ description: 在 Linux 服务器上使用官方更新服务下载、安装并部
 
 本文说明如何在 Linux 服务器上使用安装脚本下载最新的 AfterTicket Client，并提前选择运行模式、预填 Node Token。
 
-当前官方更新服务负责提供版本信息和客户端二进制下载。安装脚本随 AfterTicket-Updater 仓库或官方发布渠道提供；请先将 `install-afterticket-linux.sh` 放到目标服务器，再执行下方命令。
+官方安装脚本下载地址：
+
+<https://apac.r2.static.isla.fan/public/afterticket/install-afterticket-linux.sh>
+
+官方更新服务负责提供版本信息和客户端二进制下载：
+
+- 服务根地址：`https://updater.afterticket.org/`
+- API Base URL：`https://updater.afterticket.org/api/v1`
+- 脚本会调用：`GET /api/v1/version`、`GET /api/v1/download/Linux`
+
+## 下载脚本
+
+在目标 Linux 服务器上执行：
+
+```sh
+curl -fsSLO https://apac.r2.static.isla.fan/public/afterticket/install-afterticket-linux.sh
+chmod +x install-afterticket-linux.sh
+```
+
+如果服务器没有 `curl`，可以使用：
+
+```sh
+wget https://apac.r2.static.isla.fan/public/afterticket/install-afterticket-linux.sh
+chmod +x install-afterticket-linux.sh
+```
 
 ## 适用场景
 
