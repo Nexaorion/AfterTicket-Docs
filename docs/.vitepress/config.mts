@@ -32,6 +32,12 @@ export default defineConfig({
         ]
       },
       {
+        text: '使用用例',
+        items: [
+          { text: 'Linux 服务器一键部署', link: '/use-cases/linux-server-deploy' },
+        ]
+      },
+      {
         text: '法律文件',
         items: [
           { text: '用户协议', link: '/policy/user-agreement' },
