@@ -32,6 +32,10 @@ wget https://apac.r2.static.isla.fan/public/afterticket/install-afterticket-linu
 chmod +x install-afterticket-linux.sh
 ```
 
+## 生成脚本运行模板
+
+<LinuxDeployCommandBuilder />
+
 ## 适用场景
 
 ### 集群节点模式
